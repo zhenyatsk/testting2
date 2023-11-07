@@ -1,4 +1,4 @@
-FROM klakegg/hugo:0.101.0-ext-alpine
+FROM klakegg/hugo:ext-alpine
 
 RUN apk update
 RUN apk add git 
