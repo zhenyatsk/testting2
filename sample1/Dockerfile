@@ -6,5 +6,5 @@ RUN apk add git
 WORKDIR /src
 RUN git clone --recurse-submodules --depth 1 https://github.com/kubernetes/minikube.git
 WORKDIR /src/minikube/site
-RUN npm install
+RUN cd themes/docsy && npm install
 RUN hugo server
