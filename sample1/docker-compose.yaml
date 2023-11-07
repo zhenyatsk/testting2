@@ -5,7 +5,9 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
+    command: server -b http://sample1.DOMAINDOMAIN
     restart: unless-stopped
     tty: true
+    working_dir: /src/minikube/site
     ports:
-    - "8079:80"
+    - "1313:80"
