@@ -10,4 +10,4 @@ services:
     tty: true
     working_dir: /src/minikube/site
     ports:
-    - "8079:1313"
+    - "8001:1313"

@@ -10,4 +10,4 @@ services:
     volumes:
       - "./src:/usr/share/nginx/html:ro"
     ports:
-    - "8080:80"
+    - "8002:80"
