@@ -1,0 +1,13 @@
+---
+version: '3'
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    restart: unless-stopped
+    tty: true
+    volumes:
+      - "./src:/usr/share/nginx/html:ro"
+    ports:
+    - "8004:80"
